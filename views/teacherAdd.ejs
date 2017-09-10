@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Sequelize_dudududu ?(ADD)</h1>
+
+  <form class="" action="/add" method="post">
+    <table>
+      <tr>
+        <td>First Name</td>
+        <td>
+          <input type="text" name="fn" value="" placeholder="Your First Name">
+        </td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td>
+          <input type="text" name="ln" value="" placeholder="Your Last Name">
+        </td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>
+          <input type="email" name="email" value="" placeholder="Your Email Address">
+        </td>
+      </tr>
+      <tr>
+        <td>Subject</td>
+        <td>
+          <select class="subjectName" name="">
+            <option value=""> - choose - </option>
+            <% data.forEach(r => { %>
+            <option value="<%= r.subjectID %>"><%= r.subject_name %></option>
+            <% }) %>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit" value="Save">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <br>
+
+  <a href="/teacher"> << back </a>
+
+</body>
+</html>

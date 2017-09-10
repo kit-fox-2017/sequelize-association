@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Welcome, ?(STUDENTS DATA)</h1>
+  <table border="1" cellpadding="5">
+    <thead>
+      <th>No</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Actions</th>
+      <th>Options</th>
+    </thead>
+    <% var i = 1
+      data.forEach(r => { %>
+    <tbody>
+      <td><%= i %></td>
+      <td><%= r.first_name %></td>
+      <td><%= r.last_name %></td>
+      <td>
+        <a href="/student/add">Add</a>
+      </td>
+      <td>
+        <a href="/student/edit/:id">Edit</a>
+        <a href="/student/delete/:id">Delete</a>
+      </td>
+    </tbody>
+    <% }) %>
+  </table>
+  <a href="/student/add" style="background:green; color:white; padding:5px; display:inline-block; text-decoration:none; border-radius:10px; margin:10px 0; font-size:15px">Add Student</a>
+
+  <br>
+
+  <a href="/"> << back </a>
+
+</body>
+</html>

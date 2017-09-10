@@ -1,0 +1,21 @@
+{
+  "name": "sequelize-association",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dpangkey",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "grunt-cli": "^1.2.0",
+    "jquery": "^3.2.1",
+    "pg": "^7.3.0",
+    "sequelize": "^4.8.2"
+  }
+}

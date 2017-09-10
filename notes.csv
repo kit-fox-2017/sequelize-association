@@ -1,0 +1,7 @@
+Sequelize Association one-to-many many-to-many
+
+Relasi antara model Subject dan Teacher adalah one Subject has many Teacher. Asosiasikan model Subject dan Teacher dengan menambahkan field pada salah satu model untuk menampung referensi dari model lainnya. Lakukan migrasi dan sesuaikan model dengan migrasi yang telah dilakukan (5)
+
+Buatlah fitur CRUD untuk tabel Teachers. Ikuti bentuk CRUD untuk tabel Students dan samakan pola routing pada /students/*. (20, each 5)
+
+Pada laman yang menampilkan semua data Teacher, munculkan Subject yang ditentukan untuk Teacher tersebut. Bila belum ditentukan, munculkan tulisan ‘unassigned’ (15)
